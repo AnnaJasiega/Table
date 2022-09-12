@@ -28,15 +28,8 @@ export class AppComponent {
         });
   }
   filter(e: KeyboardEvent) {
-    console.log(e)
-    const event = e;
-    console.log(event);
     let text: any; 
-     if (event.target) {
-      text = event.target;
-     }
-  
-    this.listToDisplay = this.list.filter(x => x.description.indexOf(text.value) !== -1)
-    console.log(this.listToDisplay)
+    e.target ? text = e.target : null;
+    this.listToDisplay = this.list.filter(x => x.description.indexOf(text.value) !== -1);
   }
 }
