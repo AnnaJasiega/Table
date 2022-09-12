@@ -1,3 +1,8 @@
+
+# Usage instruction
+
+Copy this repository, run 'npm install' and next 'ng serve'. Now you can see work orders data. You can filter datas by description.
+
 # Table
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
